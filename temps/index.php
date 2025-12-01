@@ -51,3 +51,13 @@ echo "The original temperature, $temp, converted is $converted.";
 
     </body>
 </html>
+if (isset($_POST['btnConvert'])) {
+$temp = $_POST['temp'];
+$scale = $_POST['scale'];
+$converted = convert($temp, $scale);
+echo "The original temperature, $temp, converted is $converted.";
+}
+?>
+
+    </body>
+</html>
